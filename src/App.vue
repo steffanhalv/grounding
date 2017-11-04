@@ -1,15 +1,29 @@
 <template>
   <!-- Don't drop "q-app" class -->
   <div id="q-app">
-    <router-view />
+    <grounding></grounding>
   </div>
 </template>
 
 <script>
-/*
- * Root component
- */
-export default {}
+import Grounding from 'components/Grounding'
+export default {
+  name: 'app',
+  components: {
+    Grounding
+  }
+}
 </script>
 
-<style></style>
+<style>
+  body, #q-app {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+  }
+</style>
