@@ -331,6 +331,7 @@
   .prop .header, .prop .elem-header {
     cursor: pointer;
     background: #222;
+    opacity: 1!important;
   }
   .prop .header:hover {
     background: #333;
@@ -344,15 +345,13 @@
   }
   .prop h1.elem-header {
     display: inline-block;
-    margin: 0!important;
-    background: #eee;
     padding-left: 25px!important;
+    background: #000;
     font-size: 25px;
     font-weight: bold;
     width: 100%!important;
-    color: #000;
     cursor: default!important;
-    margin: 10px 0!important;
+    margin: 0 0 10px!important;
   }
   .prop .body {
     display: none;
