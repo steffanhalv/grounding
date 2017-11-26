@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7a16618-7c6c-4cf5-be29-d1fa9908de84" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Grounding.vue" afterPath="$PROJECT_DIR$/src/components/Grounding.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="Grounding.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Grounding.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="256" column="23" lean-forward="false" selection-start-line="256" selection-start-column="23" selection-end-line="256" selection-end-column="23" />
+            <state relative-caret-position="746">
+              <caret line="342" column="33" lean-forward="false" selection-start-line="342" selection-start-column="33" selection-end-line="342" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -231,12 +232,12 @@
       <workItem from="1509836870700" duration="79000" />
       <workItem from="1511459297194" duration="43000" />
       <workItem from="1511654565010" duration="9541000" />
-      <workItem from="1511724640991" duration="3067000" />
+      <workItem from="1511724640991" duration="4965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15018000" />
+    <option name="totallyTimeSpent" value="16916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="0" width="2480" height="1738" extended-state="0" />
@@ -486,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Grounding.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="256" column="23" lean-forward="false" selection-start-line="256" selection-start-column="23" selection-end-line="256" selection-end-column="23" />
+        <state relative-caret-position="746">
+          <caret line="342" column="33" lean-forward="false" selection-start-line="342" selection-start-column="33" selection-end-line="342" selection-end-column="33" />
           <folding />
         </state>
       </provider>

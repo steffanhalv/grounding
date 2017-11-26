@@ -24,7 +24,9 @@
           <h1>Style</h1>
         </div>
         <div class="body">
-          Styles
+          Color<br>
+          Position<br>
+          Size etc. (css)
         </div>
       </div>
       <div
@@ -154,11 +156,98 @@
           <section>Section</section>
         </div>
       </div>
+      <div
+        :class="{open: prop === 'events'}"
+        class="prop style">
+        <div
+          @click="prop = 'events'"
+          class="header">
+          <h1>Events</h1>
+        </div>
+        <div class="body">
+          Elemental<br>
+          Global
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'assets'}"
+        class="prop style">
+        <div
+          @click="prop = 'assets'"
+          class="header">
+          <h1>Assets</h1>
+        </div>
+        <div class="body">
+          File Explorer
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'layers'}"
+        class="prop style">
+        <div
+          @click="prop = 'layers'"
+          class="header">
+          <h1>Layers</h1>
+        </div>
+        <div class="body">
+          DOM Tree
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'build'}"
+        class="prop style">
+        <div
+          @click="prop = 'build'"
+          class="header">
+          <h1>Build</h1>
+        </div>
+        <div class="body">
+          Windows<br>
+          Mac<br>
+          Linux<br>
+          Android<br>
+          IOS<br>
+          Web<br>
+          WP Plugin<br>
+          WP Theme
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'settings'}"
+        class="prop style">
+        <div
+          @click="prop = 'settings'"
+          class="header">
+          <h1>Settings</h1>
+        </div>
+        <div class="body">
+          Icon<br>
+          Window width<br>
+          Window height<br>
+          Window position<br>
+          Allow resize<br>
+          IOS Default scroll<br>
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'router'}"
+        class="prop style">
+        <div
+          @click="prop = 'router'"
+          class="header">
+          <h1>Router</h1>
+        </div>
+        <div class="body">
+          Hierarchial
+        </div>
+      </div>
     </div>
-    <div
-      @click="editor = !editor"
-      :class="{'editor-open': editor}"
-      class="toggl">
+    <div class="devbar">
+      <div
+        @click="editor = !editor"
+        :class="{'editor-open': editor}"
+        class="toggl">
+      </div>
     </div>
   </div>
 </template>
@@ -184,21 +273,25 @@
   .workspace {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 26px);
     background: #333;
+  }
+  .devbar {
+    position: absolute;
+    bottom: 0;
+    height: 26px;
+    width: 100%;
+    background: #444;
   }
   .toggl {
     position: absolute;
-    bottom: 8px;
-    left: 8px;
+    bottom: 3px;
+    left: 3px;
     width: 20px;
     height: 20px;
-    background: #000;
+    background: #fff;
     opacity: .2;
     border-radius: 3px;
-  }
-  .toggl.editor-open {
-    background: #fff;
   }
   .toggl:hover {
     opacity: .7;
@@ -206,15 +299,15 @@
   }
   .tools {
     position: absolute;
-    width: 34px;
-    height: 100%;
+    width: 26px;
+    height: calc(100% - 26px);
     background: #444;
   }
   .tool {
     color: #ccc;
     position: relative;
     width: 100%;
-    height: 34px;
+    height: 28px;
     background: #222;
     border-bottom: 1px solid #000;
   }
@@ -229,8 +322,9 @@
     position: absolute;
     right: 0;
     width: 200px;
-    height: 100%;
+    height: calc(100% - 26px);
     background: #444;
+    border-bottom: 1px solid #333;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -242,10 +336,11 @@
     background: #333;
   }
   .prop .header h1, .prop h1.elem-header {
-    padding: 5px;
+    padding: 10px;
     margin: 0;
     font-size: 12px;
     color: #bbb;
+    border-bottom: 1px solid #000;
   }
   .prop h1.elem-header {
     display: inline-block;
