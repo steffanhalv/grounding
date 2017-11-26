@@ -1,6 +1,8 @@
 <template>
   <div class="grounding">
     <div class="workspace">
+      <div class="view">
+      </div>
     </div>
     <div v-if="editor" class="tools">
       <div
@@ -325,6 +327,13 @@
     height: calc(100% - 26px);
     background: #333;
   }
+  .view {
+    position: relative;
+    margin: 30px auto;
+    width: calc(100vh / 2);
+    height: calc(100vh - 60px - 26px);
+    background: #000;
+  }
   .devbar {
     position: absolute;
     bottom: 0;
@@ -389,7 +398,7 @@
     padding: 10px;
     margin: 0;
     font-size: 12px;
-    color: #bbb;
+    color: #ccc;
     border-bottom: 1px solid #000;
   }
   .prop h1.elem-header {
