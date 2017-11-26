@@ -17,7 +17,7 @@
     <div v-if="editor" class="props">
       <div
         :class="{open: prop === 'style'}"
-        class="prop style">
+        class="prop">
         <div
           @click="prop = 'style'"
           class="header">
@@ -158,7 +158,7 @@
       </div>
       <div
         :class="{open: prop === 'events'}"
-        class="prop style">
+        class="prop">
         <div
           @click="prop = 'events'"
           class="header">
@@ -170,20 +170,8 @@
         </div>
       </div>
       <div
-        :class="{open: prop === 'assets'}"
-        class="prop style">
-        <div
-          @click="prop = 'assets'"
-          class="header">
-          <h1>Assets</h1>
-        </div>
-        <div class="body">
-          File Explorer
-        </div>
-      </div>
-      <div
         :class="{open: prop === 'layers'}"
-        class="prop style">
+        class="prop">
         <div
           @click="prop = 'layers'"
           class="header">
@@ -194,27 +182,80 @@
         </div>
       </div>
       <div
-        :class="{open: prop === 'build'}"
-        class="prop style">
+        :class="{open: prop === 'assets'}"
+        class="prop">
         <div
-          @click="prop = 'build'"
+          @click="prop = 'assets'"
           class="header">
-          <h1>Build</h1>
+          <h1>Assets</h1>
         </div>
         <div class="body">
-          Windows<br>
-          Mac<br>
-          Linux<br>
-          Android<br>
-          IOS<br>
-          Web<br>
-          WP Plugin<br>
-          WP Theme
+          File Explorer
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'context'}"
+        class="prop">
+        <div
+          @click="prop = 'context'"
+          class="header">
+          <h1>Context Menu</h1>
+        </div>
+        <div class="body">
+          Option 1<br>
+          Option 2<br>
+          Option 3
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'models'}"
+        class="prop">
+        <div
+          @click="prop = 'models'"
+          class="header">
+          <h1>Models</h1>
+        </div>
+        <div class="body">
+          (Folder structure)<br>
+          Product<br>
+          Car<br>
+          Pencil<br>
+          User<br>
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'integrations'}"
+        class="prop">
+        <div
+          @click="prop = 'integrations'"
+          class="header">
+          <h1>Integrations</h1>
+        </div>
+        <div class="body">
+          (New opens papir settings)<br>
+          Wordpress<br>
+          Woocommerce<br>
+          Storepilot
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'packages'}"
+        class="prop">
+        <div
+          @click="prop = 'packages'"
+          class="header">
+          <h1>Packages</h1>
+        </div>
+        <div class="body">
+          (From package json)<br>
+          Element-UI<br>
+          Bootstrap<br>
+          Context Menu<br>
         </div>
       </div>
       <div
         :class="{open: prop === 'settings'}"
-        class="prop style">
+        class="prop">
         <div
           @click="prop = 'settings'"
           class="header">
@@ -230,15 +271,23 @@
         </div>
       </div>
       <div
-        :class="{open: prop === 'router'}"
-        class="prop style">
+        :class="{open: prop === 'export'}"
+        class="prop">
         <div
-          @click="prop = 'router'"
+          @click="prop = 'export'"
           class="header">
-          <h1>Router</h1>
+          <h1>Export</h1>
         </div>
         <div class="body">
-          Hierarchial
+          Project<br>
+          Windows App<br>
+          Mac App<br>
+          Linux App<br>
+          Android App<br>
+          IOS App<br>
+          Web Page<br>
+          Wordpress Plugin<br>
+          Wordpress Theme
         </div>
       </div>
     </div>

@@ -27,8 +27,8 @@
       <file leaf-file-name="Grounding.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Grounding.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="348" column="21" lean-forward="false" selection-start-line="348" selection-start-column="21" selection-end-line="348" selection-end-column="21" />
+            <state relative-caret-position="872">
+              <caret line="208" column="12" lean-forward="false" selection-start-line="208" selection-start-column="12" selection-end-line="208" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -67,6 +67,12 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>style</find>
+      <find>prop st</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -232,12 +238,12 @@
       <workItem from="1509836870700" duration="79000" />
       <workItem from="1511459297194" duration="43000" />
       <workItem from="1511654565010" duration="9541000" />
-      <workItem from="1511724640991" duration="5270000" />
+      <workItem from="1511724640991" duration="6575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17221000" />
+    <option name="totallyTimeSpent" value="18526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="0" width="2480" height="1738" extended-state="0" />
@@ -487,8 +493,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Grounding.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="348" column="21" lean-forward="false" selection-start-line="348" selection-start-column="21" selection-end-line="348" selection-end-column="21" />
+        <state relative-caret-position="872">
+          <caret line="208" column="12" lean-forward="false" selection-start-line="208" selection-start-column="12" selection-end-line="208" selection-end-column="12" />
           <folding />
         </state>
       </provider>
