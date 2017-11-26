@@ -28,14 +28,15 @@
         </div>
       </div>
       <div
-        :class="{open: prop === 'elements-text'}"
+        :class="{open: prop === 'elements'}"
         class="prop elements">
         <div
-          @click="prop = 'elements-text'"
+          @click="prop = 'elements'"
           class="header">
-          <h1>Text Content</h1>
+          <h1>Elements</h1>
         </div>
         <div class="body elements">
+          <h1 class="elem-header">Text Content</h1>
           <div>Div</div>
           <blockquote>Blockquote</blockquote>
           <dl>Description List</dl>
@@ -50,17 +51,7 @@
           <ul>List</ul>
           <ol>List Numbered</ol>
           <li>List Element</li>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-text-inline'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-text-inline'"
-          class="header">
-          <h1>Text Inline</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Text Inline</h1>
           <a>Link</a>
           <bdi>Biderectional Isolation</bdi>
           <bdo>Biderectional Override</bdo>
@@ -91,74 +82,24 @@
           <time>Time</time>
           <var>Variable</var>
           <wbdr>Line Break</wbdr>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-media'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-media'"
-          class="header">
-          <h1>Multimedia</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Multimedia</h1>
           <area>Image Hotspot</area>
           <audio>Audio</audio>
           <video>Video</video>
           <track>
           <picture>Picture</picture>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-embeded'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-embeded'"
-          class="header">
-          <h1>Embedded</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Embedded</h1>
           <embed>Embed</embed>
           <object>Object</object>
           <param>Object Parameter</param>
           <source>Source</source>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-scripting'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-scripting'"
-          class="header">
-          <h1>Scripting</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Scripting</h1>
           <canvas>Canvas</canvas>
           <noscript>No Script</noscript>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-demarc'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-demarc'"
-          class="header">
-          <h1>Demarcating Edits</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Demarcating Edits</h1>
           <del>Deleted</del>
           <ins>Inserted</ins>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-table'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-table'"
-          class="header">
-          <h1>Table</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Table</h1>
           <caption>Caption</caption>
           <table>Table</table>
           <tbody>Body</tbody>
@@ -169,17 +110,7 @@
           <th>Cell header</th>
           <colgroup>Column Group</colgroup>
           <col>Column</col>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-forms'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-forms'"
-          class="header">
-          <h1>Forms</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Forms</h1>
           <button>Button</button>
           <datalist>Datalist</datalist>
           <Fieldset>Fieldset</Fieldset>
@@ -194,50 +125,20 @@
           <progress>Progress</progress>
           <select>Select</select>
           <textarea></textarea>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-interactive'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-interactive'"
-          class="header">
-          <h1>Interactive</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Interactive</h1>
           <details>Details</details>
           <dialog>Dialog</dialog>
           <menu>Menu</menu>
           <menuitem>Menu Item</menuitem>
           <summary>Summary</summary>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-web'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-web'"
-          class="header">
-          <h1>Web</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Web</h1>
           <content>Content</content>
           <element>Element</element>
           <shadow>Shadow</shadow>
           <slot>Slot</slot>
           <template>Template</template>
           <iframe>Iframe</iframe>
-        </div>
-      </div>
-      <div
-        :class="{open: prop === 'elements-content'}"
-        class="prop elements">
-        <div
-          @click="prop = 'elements-content'"
-          class="header">
-          <h1>Content Sectioning</h1>
-        </div>
-        <div class="body elements">
+          <h1 class="elem-header">Content Sectioning</h1>
           <h1>Header 1</h1>
           <h2>Header 2</h2>
           <h3>Header 3</h3>
@@ -333,18 +234,30 @@
     overflow-y: scroll;
     overflow-x: hidden;
   }
-  .prop .header {
+  .prop .header, .prop .elem-header {
     cursor: pointer;
     background: #222;
   }
   .prop .header:hover {
     background: #333;
   }
-  .prop .header h1 {
+  .prop .header h1, .prop h1.elem-header {
     padding: 5px;
     margin: 0;
     font-size: 12px;
     color: #bbb;
+  }
+  .prop h1.elem-header {
+    display: inline-block;
+    margin: 0!important;
+    background: #eee;
+    padding-left: 25px!important;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%!important;
+    color: #000;
+    cursor: default!important;
+    margin: 10px 0!important;
   }
   .prop .body {
     display: none;
