@@ -226,6 +226,46 @@
         </div>
       </div>
       <div
+        :class="{open: prop === 'pages'}"
+        class="prop">
+        <div
+          @click="prop = 'pages'"
+          class="header">
+          <h1>Pages</h1>
+        </div>
+        <div class="body">
+          (Folder structure)<br>
+          Page 1<br>
+          Page 2
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'routes'}"
+        class="prop">
+        <div
+          @click="prop = 'routes'"
+          class="header">
+          <h1>Routes</h1>
+        </div>
+        <div class="body">
+          Route 1<br>
+          Route 2
+        </div>
+      </div>
+      <div
+        :class="{open: prop === 'menu'}"
+        class="prop">
+        <div
+          @click="prop = 'menu'"
+          class="header">
+          <h1>Native Menu</h1>
+        </div>
+        <div class="body">
+          Item 1<br>
+          Item 2
+        </div>
+      </div>
+      <div
         :class="{open: prop === 'integrations'}"
         class="prop">
         <div
