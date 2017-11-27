@@ -327,6 +327,20 @@
         </div>
       </div>
       <div
+        :class="{open: prop === 'revision'}"
+        class="prop">
+        <div
+          @click="prop = 'revision'"
+          class="header">
+          <h1>History</h1>
+        </div>
+        <div class="body">
+          Commit 5<br>
+          Commit 4<br>
+          Commit 3<br>
+        </div>
+      </div>
+      <div
         :class="{open: prop === 'export'}"
         class="prop">
         <div
