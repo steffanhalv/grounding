@@ -332,7 +332,7 @@
         <div
           @click="prop = 'revision'"
           class="header">
-          <h1>History</h1>
+          <h1>Revision</h1>
         </div>
         <div class="body">
           Commit 5<br>
