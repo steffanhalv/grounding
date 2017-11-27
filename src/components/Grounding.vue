@@ -266,6 +266,20 @@
         </div>
       </div>
       <div
+        :class="{open: prop === 'database'}"
+        class="prop">
+        <div
+          @click="prop = 'database'"
+          class="header">
+          <h1>Database</h1>
+        </div>
+        <div class="body">
+          Table 1<br>
+          Table 2<br>
+          Table 3<br>
+        </div>
+      </div>
+      <div
         :class="{open: prop === 'integrations'}"
         class="prop">
         <div
