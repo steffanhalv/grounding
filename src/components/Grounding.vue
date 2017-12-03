@@ -38,8 +38,10 @@
           @click="prop = 'elements'"
           class="header">
           <h1>Elements</h1>
+          <draggable v-html="test"></draggable>
         </div>
         <div class="body elements">
+          <input v-model="elementsFilter">
           <h1 class="elem-header">Text Content</h1>
           <div>Div</div>
           <blockquote>Blockquote</blockquote>
@@ -85,7 +87,7 @@
           <sup>Text High</sup>
           <time>Time</time>
           <var>Variable</var>
-          <wbdr>Line Break</wbdr>
+          <wbr>Line Break</wbr>
           <h1 class="elem-header">Multimedia</h1>
           <area>Image Hotspot</area>
           <audio>Audio</audio>
@@ -372,13 +374,85 @@
 </template>
 
 <script>
+  import draggable from 'vuedraggable'
   export default {
     name: 'grounding',
+    components: {
+      draggable
+    },
     data () {
       return {
         editor: true,
         tool: 'move',
-        prop: 'elements-text'
+        prop: 'elements-text',
+        test: '<h5>Hey</h5>',
+        elementsFilter: '',
+        elementGroups: [
+          {
+            name: 'Text Contents',
+            elements: [
+              {
+                name: 'Div',
+                selector: 'div',
+                attributes: ['global', 'events'],
+                close: true,
+                parent: null
+              },
+              {
+                name: 'Blockquote',
+                selector: 'blockquote',
+                attributes: ['global', 'events'],
+                close: true,
+                parent: null
+              },
+              {
+                name: 'Description List',
+                selector: 'dl',
+                attributes: ['global', 'events'],
+                close: true,
+                parent: null
+              },
+              {
+                name: 'Description Term',
+                selector: 'dt',
+                attributes: ['global', 'events'],
+                close: true,
+                parent: 'dl'
+              },
+              {
+                name: 'Description Term Content',
+                selector: 'dd',
+                attributes: ['global', 'events'],
+                close: true,
+                parent: 'dt'
+              }
+            ]
+          },
+          {
+            name: 'Unvisible',
+            elements: [
+              {
+                name: 'Header',
+                selector: 'hr',
+                attributes: ['global', 'events'],
+                close: false,
+                parent: null
+              },
+              {
+                name: 'Break',
+                selector: 'br',
+                attributes: ['global', 'events'],
+                close: false,
+                parent: null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    computed: {
+      elementsFiltered () {
+        return []
       }
     }
   }
